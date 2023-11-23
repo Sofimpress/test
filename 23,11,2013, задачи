@@ -1,0 +1,38 @@
+Распишите порядок вычисления выражения по операциям:
+11 * 2 ** 2 – 13 / 4 + 7
+
+1. 2 ** 2
+2. 11 * (2 ** 2)
+3. 13 / 4
+4. (11 * (2 ** 2)) - (13 / 4)
+5. ((11 * (2 ** 2)) - (13 / 4)) + 7
+
+Даны катеты прямоугольного треугольника a и b. Найдите его периметр P.
+import math
+print('vvedite teloe chisl a, b', end = '')
+a = int(input('a'))
+b = int(input('b'))
+c = sqrt((a*a) + (b*b))
+P = c + a + b
+print('P', P)
+
+
+Обменяйте местами значения двух переменных.
+print('vvedite teloe chisl a, b', end = '')
+a = int(input('a'))
+b = int(input('b'))
+c = 0
+c = a
+a = b
+b = c
+print('a', a)
+print('b', b)
+
+Вводится трехзначное число. Написать программу, которая вычисляет сумму его цифр.
+N = int(input("vvedite 3yxznach chisl  "))
+digit100 = N // 100
+digit10 = (N - digit100 * 100)  // 10
+digit1 = digit10 % 10
+summ = digit100 + digit10 + digit1
+print('summ  ', summ)
+
